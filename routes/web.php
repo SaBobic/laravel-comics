@@ -17,3 +17,7 @@ Route::get('/comics', function () {
     $comics = config('comics');
     return view('comics.index', compact('comics'));
 })->name('comics');
+
+Route::get('/comics/action-comics-1000/', function () {
+    return view('comics.show');
+});
