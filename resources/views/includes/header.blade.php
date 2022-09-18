@@ -1,3 +1,7 @@
+@php
+    $main_menu = config('main_menu');
+@endphp
+
 <header id="main-header">
     <nav class="container">
         <figure>
@@ -9,7 +13,7 @@
         <ul>
             @foreach ($main_menu as $item)
                 <li>
-                    <a href="{{ route($item['route']) }}">{{ $item['anchor'] }}</a>
+                    <a href="{{ route($item['route']) }}" class="{{ Route::is($item['route']) ? 'active' : '' }}">{{ $item['anchor'] }}</a>
                 </li>
             @endforeach
         </ul>

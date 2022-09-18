@@ -2,7 +2,7 @@
 
 return [
     [
-        'route' => 'comics.index',
+        'route' => 'characters',
         'anchor' => 'CHARACTERS'
     ],
     [
@@ -10,35 +10,35 @@ return [
         'anchor' => 'COMICS'
     ],
     [
-        'route' => 'comics.index',
+        'route' => 'movies',
         'anchor' => 'MOVIES'
     ],
     [
-        'route' => 'comics.index',
+        'route' => 'tv',
         'anchor' => 'TV'
     ],
     [
-        'route' => 'comics.index',
+        'route' => 'games',
         'anchor' => 'GAMES'
     ],
     [
-        'route' => 'comics.index',
+        'route' => 'collectibles',
         'anchor' => 'COLLECTIBLES'
     ],
     [
-        'route' => 'comics.index',
+        'route' => 'videos',
         'anchor' => 'VIDEOS'
     ],
     [
-        'route' => 'comics.index',
+        'route' => 'fans',
         'anchor' => 'FANS'
     ],
     [
-        'route' => 'comics.index',
+        'route' => 'news',
         'anchor' => 'NEWS'
     ],
     [
-        'route' => 'comics.index',
+        'route' => 'shop',
         'anchor' => 'SHOP'
     ]
 ];
