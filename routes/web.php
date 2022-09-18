@@ -16,8 +16,13 @@ use Illuminate\Support\Facades\Route;
 Route::get('/comics', function () {
     $comics = config('comics');
     return view('comics.index', compact('comics'));
-})->name('comics');
+})->name('comics.index');
 
-Route::get('/comics/action-comics-1000/', function () {
-    return view('comics.show');
-});
+Route::get('/comics/{id}', function ($id) {
+    $comics = config('comics');
+    if($id < 0 || !is_numeric($id) || $id >= count($comics)){
+        abort(404);
+    }
+    $comic = $comics[$id];
+    return view('comics.show', compact('comic'));
+})->name('comics.show');

@@ -11,10 +11,12 @@
                 @foreach ($comics as $comic)
                     <div class="col">
                         <figure>
-                            <div>
-                                <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}">
-                            </div>
-                            <figcaption>{{ $comic['series'] }}</figcaption>
+                            <a href="{{ route('comics.show', ['id' => $loop->index]) }}">
+                                <div>
+                                    <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}">
+                                </div>
+                                <figcaption>{{ $comic['series'] }}</figcaption>
+                            </a>
                         </figure>
                     </div>
                     @endforeach
@@ -27,31 +29,31 @@
         <div class="row container">
             <div class="col">
                 <figure>
-                    <img src="img/buy-comics-digital-comics.png" alt="item.text">
+                    <img src="{{ asset('img/buy-comics-digital-comics.png')}}" alt="item.text">
                     <figcaption>DIGITAL COMICS</figcaption>
                 </figure>
             </div>
             <div class="col">
                 <figure>
-                    <img src="img/buy-comics-merchandise.png" alt="item.text">
+                    <img src="{{ asset('img/buy-comics-merchandise.png')}}" alt="item.text">
                     <figcaption>DC MERCHANDISE</figcaption>
                 </figure>
             </div>
             <div class="col">
                 <figure>
-                    <img src="img/buy-comics-subscriptions.png" alt="item.text">
+                    <img src="{{ asset('img/buy-comics-subscriptions.png')}}" alt="item.text">
                     <figcaption>SUBSCRIPTION</figcaption>
                 </figure>
             </div>
             <div class="col">
                 <figure>
-                    <img src="img/buy-comics-shop-locator.png" alt="item.text">
+                    <img src="{{ asset('img/buy-comics-shop-locator.png')}}" alt="item.text">
                     <figcaption>COMIC SHOP LOCATOR</figcaption>
                 </figure>
             </div>
             <div class="col">
                 <figure>
-                    <img src="img/buy-dc-power-visa.svg" alt="item.text">
+                    <img src="{{ asset('img/buy-dc-power-visa.svg')}}" alt="item.text">
                     <figcaption>DC POWER VISA</figcaption>
                 </figure>
             </div>

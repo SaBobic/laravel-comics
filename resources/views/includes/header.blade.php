@@ -9,7 +9,7 @@
         <ul>
             @foreach ($main_menu as $item)
                 <li>
-                    <a href="{{ $item['url'] }}">{{ $item['anchor'] }}</a>
+                    <a href="{{ route($item['route']) }}">{{ $item['anchor'] }}</a>
                 </li>
             @endforeach
         </ul>

@@ -140,6 +140,7 @@ section.jumbotron {
   width: 100%;
 }
 .series-list figure figcaption {
+  color: #fff;
   padding: 15px 0;
   text-align: left;
 }
